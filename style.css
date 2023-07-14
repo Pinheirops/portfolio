@@ -1,0 +1,41 @@
+a,
+h1,
+p,
+ul,
+body {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.navMain {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+}
+
+.mainIntroduction {
+  font-family: "Maven Pro", sans-serif;
+}
+
+.mainIntroduction h1 {
+  font-weight: 600;
+}
+
+.mainIntroduction p:first-child {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.mainIntroduction p:nth-last-child(2) {
+  max-width: 55ch;
+}
+
+.mainImgDiv {
+  max-width: 30%;
+}
+
+.project h2{
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 700;
+}
