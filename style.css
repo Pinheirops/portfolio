@@ -33,10 +33,21 @@ body {
 
 .mainIntroduction p:nth-last-child(2) {
   max-width: 55ch;
+  font-weight: 500;
 }
 
 .mainImgDiv {
   max-width: 30%;
+}
+
+.buttons a{
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+}
+
+.cartoes-projeto{
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
 }
 
 .project h2,
@@ -77,15 +88,15 @@ body {
   font-weight: 600;
 }
 
-.exp {
+.exp-detail {
   font-family: "Maven Pro", sans-serif;
 }
 
-.exp h4{
+.exp-detail h4{
   font-weight: 700;
 }
 
-.exp .date,
-.exp .empresa{
+.date,
+.empresa{
   font-weight: 500;
 }
