@@ -17,6 +17,19 @@ body {
   font-weight: 600;
 }
 
+.navMain .logo,
+.modo{
+  font-size: 1.5rem;
+}
+
+.modo img{
+  max-width: 100%;
+}
+
+.navMain .lista-principal{
+  font-size: 1.2rem;
+}
+
 .mainIntroduction {
   font-family: "Maven Pro", sans-serif;
 }
@@ -100,3 +113,10 @@ body {
 .empresa{
   font-weight: 500;
 }
+
+/* COLOR */
+
+.navMain a{
+  color: #006eff;
+}
+
