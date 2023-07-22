@@ -18,15 +18,15 @@ body {
 }
 
 .navMain .logo,
-.modo{
+.modo {
   font-size: 1.5rem;
 }
 
-.modo img{
+.modo img {
   max-width: 100%;
 }
 
-.navMain .lista-principal{
+.navMain .lista-principal {
   font-size: 1.2rem;
 }
 
@@ -53,17 +53,17 @@ body {
   max-width: 30%;
 }
 
-.buttons a{
+.buttons a {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
 
-.cartoes-projeto{
+.cartoes-projeto {
   font-family: "Maven Pro", sans-serif;
   font-weight: 400;
 }
 
-.skills p{
+.skills p {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
@@ -110,18 +110,33 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-.exp-detail h4{
+.exp-detail h4 {
   font-weight: 700;
 }
 
 .date,
-.empresa{
+.empresa {
   font-weight: 500;
 }
 
 /* COLOR */
 
-.navMain a{
+.navMain a {
   color: #006eff;
 }
 
+/* DETALHES */
+
+.contato{
+  position: relative;
+}
+
+.contato::after {
+  content: "";
+  width: 1000px;
+  height: 1px;
+  background: rgb(216, 216, 216);
+  position: absolute;
+  top: 0;
+  left: 10;
+}
