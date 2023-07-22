@@ -17,18 +17,18 @@
 
 <body>
 
-  <div class="container">
+  <div class="container" id="start">
     <nav class="navMain d-flex align-items-center justify-content-between p-4">
-      <a class="logo d-flex align-items-start" href="#"><img width="32" height="32" src="https://img.icons8.com/windows/32/gender-neutral-user.png" alt="gender-neutral-user" />
+      <a class="logo d-flex align-items-start" href="#start"><img width="32" height="32" src="https://img.icons8.com/windows/32/gender-neutral-user.png" alt="gender-neutral-user" />
         Pinheiro</a>
 
 
       <ul class="lista-principal d-flex">
-        <li><a class="p-3" href="#">Sobre</a></li>
-        <li><a class="p-3" href="#">Projetos</a></li>
-        <li><a class="p-3" href="#">Habilidades</a></li>
-        <li><a class="p-3" href="#">Resumo</a></li>
-        <li><a class="p-3" href="#">Contato</a></li>
+        <li><a class="p-3" href="#sobre">Sobre</a></li>
+        <li><a class="p-3" href="#projeto">Projetos</a></li>
+        <li><a class="p-3" href="#habilidades">Habilidades</a></li>
+        <li><a class="p-3" href="#resumo">Resumo</a></li>
+        <li><a class="p-3" href="#contato">Contato</a></li>
       </ul>
 
       <ul class="modo d-flex gap-2 align-items-center">
@@ -38,7 +38,7 @@
     </nav>
 
 
-    <main class="mainIntroduction container pt-5 pb-5 mt-5 ms-0 row align-items-center justify-content-center">
+    <main class="mainIntroduction container pt-5 pb-5 mt-5 ms-0 row align-items-center justify-content-center" id="sobre">
       <div class="col-7">
         <p class="text-secondary ps-3">Seja bem vindo ao meu portfolio!</p>
         <h1>Sou um <span class="text-primary">Front-end dev.</span></h1>
@@ -46,7 +46,7 @@
 
         <div class="buttons botaozin pt-3">
           <a class="btn btn-secondary rounded-5 py-2 px-4" href="#">Download CV</a>
-          <a class="btn btn-secondary rounded-5 py-2 px-4" href="#">Iniciar Jornada</a>
+          <a class="btn btn-secondary rounded-5 py-2 px-4" href="#projeto">Iniciar Jornada</a>
         </div>
       </div>
 
@@ -55,7 +55,7 @@
       </div>
     </main>
 
-    <section class="project container gap-5 pt-5 pb-5 mt-5">
+    <section class="project container gap-5 pt-5 pb-5 mt-5" id="projeto">
 
       <div class="row justify-content-center">
         <div class="text-center col-lg-7">
@@ -70,7 +70,7 @@
             <h5 class="card-title">Valorant Project</h5>
             <p class="card-text pb-2"><span class="badge bg-dark py-1 px-2">HTML5</span> | <span class="badge bg-dark py-1 px-2">CSS3</span></p>
             <p class="card-text pb-3">Desenvolvimento de uma landing page para o jogo Valorant. O usuário pode ler as últimas notícias, conhecer os mapas e os agentes disponíveis atualmente.</p>
-            <a href="#" class="btn btn-primary">Visualizar</a>
+            <a href="https://pinheirops.github.io/Valorant_/" target="_blank" class="btn btn-primary">Visualizar</a>
           </div>
         </div>
 
@@ -80,33 +80,37 @@
             <h5 class="card-title">Sushi Restaurant</h5>
             <p class="card-text pb-2 "><span class="badge bg-dark py-1 px-2">HTML5</span> | <span class="badge bg-dark py-1 px-2">CSS3</span> | <span class="badge bg-dark py-1 px-2">JAVASCRIPT</span></p>
             <p class="card-text pb-3">Desenvolvimento de um site para um restaurante de sushi. Neste projeto é possivel que o cliente veja o Menu, conheça mais sobre o restaurante e faça sua reserva.</p>
-            <a href="#" class="btn btn-primary">Visualizar</a>
+            <a href="https://pinheirops.github.io/Sushi_Restaurant/" target="_blank" class="btn btn-primary">Visualizar</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="skills container d-flex flex-column gap-4 pt-5 pb-5 mt-5 align-items-center justify-content-center">
+    <section class="skills container d-flex flex-column gap-4 pt-5 pb-5 mt-5 align-items-center justify-content-center" id="habilidades">
       <h2>Habilidades</h2>
 
       <div class="row pt-4 justify-content-center">
-        <div class="col">
+        <div class="col d-flex flex-column align-items-center">
           <img width="100" height="100" src="https://img.icons8.com/color/100/html-5--v1.png" alt="html-5--v1" />
+          <p>Html 5</p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column align-items-center">
           <img width="100" height="100" src="https://img.icons8.com/color/100/css3.png" alt="css3" />
+          <p>Css 3</p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column align-items-center">
           <img width="100" height="100" src="https://img.icons8.com/color/100/javascript--v1.png" alt="javascript--v1" />
+          <p>Javascript</p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column align-items-center">
           <img width="100" height="100" src="https://img.icons8.com/color/100/bootstrap.png" alt="bootstrap" />
+          <p>Bootstrap</p>
         </div>
       </div>
 
     </section>
 
-    <section class="resumo row container gap-4 pt-5 pb-5 mt-5 ms-0 align-items-center justify-content-center">
+    <section class="resumo row container gap-4 pt-5 pb-5 mt-5 ms-0 align-items-center justify-content-center" id="resumo">
 
       <div class="d-flex align-items-center justify-content-center">
         <h2>Formação</h2>
@@ -122,7 +126,7 @@
 
     </section>
 
-    <section class="contato container d-flex flex-column pt-5 pb-5 mt-5 align-items-center justify-content-center gap-4">
+    <section class="contato container d-flex flex-column pt-5 pb-5 mt-5 align-items-center justify-content-center gap-4" id="contato">
       <h2>Contato</h2>
 
       <div class="d-flex align-items-center gap-5 shadow p-5">
