@@ -58,6 +58,15 @@ body {
   font-weight: 500;
 }
 
+.buttons .btn-cv {
+  background-color: #006eff;
+}
+
+.buttons .btn-pg:hover {
+  background-color: #006eff;
+  transition: 0.4s;
+}
+
 .cartoes-projeto {
   font-family: "Maven Pro", sans-serif;
   font-weight: 400;
@@ -99,6 +108,7 @@ body {
 
 .form textarea {
   font-family: "Maven Pro", sans-serif;
+  resize: none;
 }
 
 .botao-form a {
@@ -127,7 +137,7 @@ body {
 
 /* DETALHES */
 
-.contato{
+.contato {
   position: relative;
 }
 
@@ -139,4 +149,85 @@ body {
   position: absolute;
   top: 0;
   left: 10;
+}
+
+.botao-form .btn:hover {
+  background: #e6b208 !important;
+}
+
+/* RESPONSIVIDADE */
+
+/* Break 1400 */
+@media (max-width: 1400px) {
+  .exp-detail {
+    background: linear-gradient(to right, #ececec 75%, #ffc400 50%);
+  }
+
+  .contato .social {
+    text-align: center;
+  }
+
+  .contato-content {
+    flex-direction: column;
+  }
+}
+
+/* Break 992 */
+@media (max-width: 992px) {
+  .contato::after {
+    display: none;
+  }
+
+  .exp-detail {
+    width: 400px;
+    gap: 5px;
+    background: #ececec;
+  }
+
+  .exp-detail .empresa span {
+    display: none;
+  }
+
+  .exp-detail .date {
+    justify-content: start !important;
+  }
+
+  .mainImgDiv {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-textos {
+    text-align: center;
+  }
+
+  .mainIntroduction .col-7 {
+    width: 500px;
+  }
+
+  .main-textos p {
+    padding: 0px !important;
+  }
+
+  .mainIntroduction .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .mainImgDiv {
+    display: none;
+  }
+
+  .cartoes-projeto {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: start !important;
+  }
 }
