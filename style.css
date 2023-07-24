@@ -195,6 +195,27 @@ body {
   .mainImgDiv {
     max-width: 100%;
   }
+
+  .navMain button{
+    border: 2px solid #006eff !important;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .navMain .lista-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 25px;
+  }
+
+  .lista-principal a{
+    font-size: 1rem;
+    border: 1px solid #006eff;
+    border-radius: 40px;
+    padding: 10px 10px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -230,4 +251,21 @@ body {
     overflow-x: scroll;
     justify-content: start !important;
   }
+
+  .navMain .lista-principal{
+    flex-direction: column;
+    justify-content: end;
+    text-align: end;
+    gap: 20px;
+  }
+
+  .lista-principal a{
+    font-size: 1rem;
+    border: 1px solid #006eff;
+    border-radius: 40px;
+    padding: 10px 10px !important;
+  }
+
 }
+  
+
