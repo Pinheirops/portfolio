@@ -252,6 +252,17 @@ body {
     justify-content: start !important;
   }
 
+  .cartoes-projeto::-webkit-scrollbar {
+    height: 15px;
+  }
+
+  .cartoes-projeto::-webkit-scrollbar-thumb {
+    background: #006eff;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-radius: 10px;
+  }
+
   .navMain .lista-principal {
     flex-direction: column;
     justify-content: end;
