@@ -183,11 +183,9 @@ body {
 }
 
 @media (max-width: 1200px) {
-
-  .icon{
+  .icon {
     right: 0px;
   }
-
 }
 
 /* Break 992 */
@@ -235,9 +233,8 @@ body {
     padding: 10px 10px !important;
   }
 
-  .icon{
-    
-    right: -8px;
+  .icon {
+    right: -5px;
     top: 26px;
   }
 }
