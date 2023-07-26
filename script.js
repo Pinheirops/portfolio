@@ -17,8 +17,11 @@ const btnMain = document.querySelector(".btn-cv");
 const cards = document.querySelectorAll(".card p");
 const cardProject = document.querySelector(".cartoes-projeto");
 
-//RESUME
+// RESUME
 const resume = document.querySelectorAll(".exp-detail p");
+
+// SOCIAL
+const social = document.querySelectorAll(".social-icon a");
 
 // DEFAULT
 const paragraphs = document.querySelectorAll("p");
@@ -68,6 +71,10 @@ function changeColor() {
 
   list.forEach((item) => {
     item.classList.toggle("borderDark");
+  });
+
+  social.forEach((item) => {
+    item.classList.toggle("bg-socialMedia");
   });
 }
 

@@ -318,7 +318,7 @@ body {
   transition: 0.5s;
 }
 
-.textDarkMode{
+.textDarkMode {
   color: #ececec !important;
 }
 
@@ -326,14 +326,13 @@ body {
   display: none;
 }
 
-.borderDark{
+.borderDark {
   border-color: #e6b208 !important;
 }
 
-.bg-darkMode{
+.bg-darkMode {
   background-color: #f0b802 !important;
 }
-
 
 .scrollzin-dark::-webkit-scrollbar {
   height: 15px;
@@ -344,4 +343,9 @@ body {
   border-top: 4px solid rgb(31, 31, 31);
   border-bottom: 4px solid rgb(31, 31, 31);
   border-radius: 10px;
+}
+
+.bg-socialMedia {
+  border-radius: 20px;
+  background: #dbdbdb;
 }
