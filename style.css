@@ -213,7 +213,7 @@ body {
   }
 
   .navMain button {
-    border: 2px solid #006eff !important;
+    border: 2px solid #006eff;
     border-radius: 30px;
     padding: 10px;
   }
@@ -273,11 +273,11 @@ body {
     justify-content: start !important;
   }
 
-  .cartoes-projeto::-webkit-scrollbar {
+  .scrollzin::-webkit-scrollbar {
     height: 15px;
   }
 
-  .cartoes-projeto::-webkit-scrollbar-thumb {
+  .scrollzin::-webkit-scrollbar-thumb {
     background: #006eff;
     border-top: 4px solid white;
     border-bottom: 4px solid white;
@@ -309,4 +309,39 @@ body {
   .form form {
     padding: 0px !important;
   }
+}
+
+/* SCRIPT CLASSES */
+
+.darkMode {
+  background: rgb(31, 31, 31);
+  transition: 0.5s;
+}
+
+.textDarkMode{
+  color: #ececec !important;
+}
+
+.show-off {
+  display: none;
+}
+
+.borderDark{
+  border-color: #e6b208 !important;
+}
+
+.bg-darkMode{
+  background-color: #f0b802 !important;
+}
+
+
+.scrollzin-dark::-webkit-scrollbar {
+  height: 15px;
+}
+
+.scrollzin-dark::-webkit-scrollbar-thumb {
+  background: #006eff;
+  border-top: 4px solid rgb(31, 31, 31);
+  border-bottom: 4px solid rgb(31, 31, 31);
+  border-radius: 10px;
 }
