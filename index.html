@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="plugins/animacao.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -21,15 +22,15 @@
 
     <nav class="navMain navbar navbar-expand-lg p-4">
       <div class="container-fluid ok">
-        <a class="logo d-flex align-items-start" href="#start">
+        <a data-anime="200" class="logo d-flex align-items-start fadeInLeft" href="#start">
           <img width="32" height="32" src="https://img.icons8.com/windows/32/gender-neutral-user.png" alt="gender-neutral-user" />
           <img class="show-off" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABb0lEQVR4nO2VO05CQRiFr5hoIVr52AMsAqQ2iqJxCUQLtDGEWCmVj3UYOwkuw4iv1hAW4BMNsVA/M8kh3gYchrmFyT3JVPf7zzlzXxMEsWL9NwGzQBW4At61GsA+MBN1+CrQprdegZUow78VdAZkgAmtLFDTtS9gOYrb3lbATh+uLOYFmPZZoNrduQVbF7vns8C1TDMW7LzYhs8CbzJNWrCTYts+CzwPUGBK7JPPApcyzVqwObEXPgvsyrRmwZ6LrfgsMAc8yrjch6uIeTCfrrcCRubnAnwqoK63PamVC+3cMPkgCgEF/el6yVwrRBW+CNzztwyz4DN4BDgKBdwAJSAVOgvSwBZwK8acGQdm1keBY5l+AEUg0YdNABtijQ6HDc+HwjMDzGVDJZZcw8eBlkyKDvObmm0CYy4F1kPPPOEwPwrcyWPNpcCphksDD/96bMvjxGW4qeHUEAXS3U/TZbhjewJaHM0dV49YsYKo9QOixZ4KLtJpYwAAAABJRU5ErkJggg==">
           Pinheiro</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button data-anime="200" class="navbar-toggler fadeInRight" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div data-anime="200" class="collapse navbar-collapse fadeInDown" id="navbarTogglerDemo02">
           <ul class="lista-principal d-flex m-auto navbar-nav">
             <li class="nav-item"><a class="p-3" href="#sobre">Sobre</a></li>
             <li class="nav-item"><a class="p-3" href="#projeto">Projetos</a></li>
@@ -39,7 +40,7 @@
           </ul>
         </div>
 
-        <div class="icon d-flex align-items-center">
+        <div data-anime="300" class="icon d-flex align-items-center fadeInRight">
           <img src="icon/moon.svg" alt="">
           <img class="show-off" src="icon/sun.svg" alt="">
         </div>
@@ -48,17 +49,17 @@
 
     <main class="mainIntroduction container pt-5 pb-5 mt-5 ms-0 row align-items-center justify-content-center" id="sobre">
       <div class="main-textos col-7">
-        <p class="text-secondary ps-3">Seja bem vindo ao meu portfolio!</p>
-        <h1>Sou um <span class="text-primary">Front-end dev.</span></h1>
-        <p class="pt-3">Meu nome é Pedro Pinheiro Passos, sou um estudande de ciência da computação focado em desenvolvimento front-end.</p>
+        <p data-anime="100" class="fadeInDown text-secondary ps-3">Seja bem vindo ao meu portfolio!</p>
+        <h1 data-anime="200" class="fadeInDown">Sou um <span class="fadeInLeft text-primary">Front-end dev.</span></h1>
+        <p data-anime="300" class="fadeInDown pt-3">Meu nome é Pedro Pinheiro Passos, sou um estudande de ciência da computação focado em desenvolvimento front-end.</p>
 
-        <div class="buttons pt-3">
+        <div data-anime="300" class="buttons pt-3 fadeInDown">
           <a class="btn-cv btn btn-secondary rounded-5 py-2 px-4" href="pdf/Currículo 2023.pdf" download="Currículo 2023.pdf">Download CV</a>
           <a class="btn-pg btn btn-secondary rounded-5 py-2 px-4" href="#projeto">Iniciar Jornada</a>
         </div>
       </div>
 
-      <div class="mainImgDiv col-5">
+      <div data-anime="200" class="mainImgDiv col-5 fadeInRight">
         <img class="img-fluid" src="img/031.png" alt="">
       </div>
     </main>
@@ -177,6 +178,7 @@
     <p>Desenvolvido por Pedro Pinheiro Passos</p>
   </footer>
 
+  <script src="plugins/simple-anime.js"></script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

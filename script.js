@@ -79,3 +79,8 @@ function changeColor() {
 }
 
 icon.addEventListener("click", changeColor);
+
+
+// ANIMAÇÃO
+
+new SimpleAnime();
