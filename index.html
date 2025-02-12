@@ -141,7 +141,7 @@
       </div>
 
     </section>
-    
+
     <section class="resumo row container gap-4 pt-5 pb-5 mt-5 ms-0 align-items-center justify-content-center" id="resumo">
 
       <div class="d-flex align-items-center justify-content-center">
@@ -178,17 +178,32 @@
         </div>
 
         <div class="form">
-          <form class="row flex-column gap-3 align-items-center p-5" action="">
+          <form class="row flex-column gap-3 align-items-center p-5" action="enviaremail.php" method="POST">
 
-            <input class="form-control" type="text" placeholder="Nome">
+            <div>
+              <label for="nome">Nome</label>
+              <input class="form-control" type="text" name="nome" id="nome" placeholder="nome" required>
+            </div>
 
-            <input class="form-control" type="email" name="email" id="email" placeholder="pinheiro@gmail.com">
+            <div>
+              <label for="sobrenome">Sobrenome</label>
+              <input class="form-control" type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome" required>
+            </div>
 
-            <textarea class="form-control" name="textarea" id="textarea" cols="40" rows="3"></textarea>
+            <div>
+              <label for="email">E-mail</label>
+              <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea class="form-control" name="mensagem" id="textarea" cols="40" rows="3"></textarea>
+            </div>
 
             <div class="botao-form d-flex p-0 justify-content-end">
-              <a class="btn bg-warning py-2 px-5 shadow" href="">Enviar</a>
+              <button type="submit" class="btn bg-warning py-2 px-5 shadow">Enviar</button>
             </div>
+
           </form>
         </div>
 
