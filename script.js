@@ -5,13 +5,13 @@ const icon = document.querySelector(".icon");
 const icons = document.querySelectorAll(".icon img");
 const logo = document.querySelectorAll(".logo img");
 const linkNav = document.querySelectorAll(".navMain a");
-const buttonNav = document.querySelector(".navMain button");
 const list = document.querySelectorAll(".lista-principal a");
 
 // MAIN
 const mainTitle = document.querySelector("h1");
 const mainSpan = document.querySelector("h1 span");
 const btnMain = document.querySelector(".btn-cv");
+const btnPage = document.querySelector(".btn-pg");
 
 // PROJECT
 const cards = document.querySelectorAll(".card p");
@@ -22,6 +22,7 @@ const resume = document.querySelectorAll(".exp-detail p");
 
 // SOCIAL
 const social = document.querySelectorAll(".social-icon a");
+const formulario = document.querySelector(".form");
 
 // DEFAULT
 const paragraphs = document.querySelectorAll("p");
@@ -42,9 +43,6 @@ function changeColor() {
     linkNav.classList.toggle("text-warning");
   });
 
-  icon.classList.toggle("borderDark");
-  buttonNav.classList.toggle("borderDark");
-
   paragraphs.forEach((paragraph) => {
     paragraph.classList.toggle("textDarkMode");
     cards.forEach((item) => {
@@ -55,8 +53,11 @@ function changeColor() {
   mainTitle.classList.toggle("textDarkMode");
   mainSpan.classList.toggle("text-warning");
 
-  btnMain.classList.toggle("bg-dark");
-  btnMain.classList.toggle("textDarkMode");
+  btnMain.classList.toggle("bg-darkMode");
+  btnMain.classList.toggle("textButtons");
+
+  btnPage.classList.toggle("bg-darkMode");
+  btnPage.classList.toggle("textButtons");
 
   titleH2.forEach((title) => {
     title.classList.toggle("textDarkMode");
@@ -76,7 +77,10 @@ function changeColor() {
   social.forEach((item) => {
     item.classList.toggle("bg-socialMedia");
   });
+
+  formulario.classList.toggle('textDarkMode');
 }
+
 
 icon.addEventListener("click", changeColor);
 

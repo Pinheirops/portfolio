@@ -18,13 +18,8 @@ body {
   position: relative;
 }
 
-.navMain .logo,
-.modo {
+.navMain .logo {
   font-size: 1.5rem;
-}
-
-.modo img {
-  max-width: 100%;
 }
 
 .navMain .lista-principal {
@@ -32,8 +27,7 @@ body {
 }
 
 .icon {
-  padding: 7px;
-  border: 2px solid #006eff;
+  padding: 5px;
   border-radius: 50px;
   cursor: pointer;
   position: absolute;
@@ -73,21 +67,31 @@ body {
   background-color: #006eff;
 }
 
-.buttons .btn-pg:hover {
+.buttons .btn-pg {
   background-color: #006eff;
-  transition: 0.4s;
 }
 
 .cartoes-projeto {
   font-family: "Maven Pro", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #3d3d3d;
+}
+
+.cartoes-projeto .card-body .btn {
+  font-weight: 500;
+  padding: 7px 20px;
 }
 
 .skills p {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
   color: #3d3d3d;
+  text-align: center;
+}
+
+.img_skill img{
+  padding: 5px;
+  width: 100px;
 }
 
 .project h2,
@@ -98,6 +102,8 @@ body {
   font-family: "Maven Pro", sans-serif;
   font-weight: 700;
   color: #3d3d3d;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .exp-detail {
@@ -105,10 +111,11 @@ body {
 }
 
 .social .social-text {
-  font-size: 1.5rem;
+  font-size: 1.50rem;
   font-family: "Maven Pro", sans-serif;
   font-weight: 600;
   color: #3d3d3d;
+  text-align: center;
 }
 
 .social .social-adress {
@@ -116,7 +123,7 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-.form input {
+.form input, .input-label {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
@@ -217,27 +224,6 @@ body {
     max-width: 100%;
   }
 
-  .navMain button {
-    border: 2px solid #006eff;
-    border-radius: 30px;
-    padding: 10px;
-  }
-
-  .navMain .lista-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 25px;
-  }
-
-  .lista-principal a {
-    font-size: 1rem;
-    border: 1px solid #006eff;
-    border-radius: 40px;
-    padding: 10px 10px !important;
-  }
-
   .icon {
     right: -5px;
     top: 26px;
@@ -289,22 +275,8 @@ body {
     border-radius: 10px;
   }
 
-  .navMain .lista-principal {
-    flex-direction: column;
-    justify-content: end;
-    text-align: end;
-    gap: 20px;
-  }
-
   .navMain {
     padding-bottom: 0px !important;
-  }
-
-  .lista-principal a {
-    font-size: 1rem;
-    border: 1px solid #006eff;
-    border-radius: 40px;
-    padding: 10px 10px !important;
   }
 
   .mainIntroduction {
@@ -338,6 +310,9 @@ body {
 .bg-darkMode {
   background-color: #f0b802 !important;
 }
+.textButtons{
+  color: #3d3d3d;
+}
 
 .scrollzin-dark::-webkit-scrollbar {
   height: 15px;
@@ -347,19 +322,10 @@ body {
   background: #006eff;
   border-top: 4px solid rgb(31, 31, 31);
   border-bottom: 4px solid rgb(31, 31, 31);
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .bg-socialMedia {
   border-radius: 20px;
   background: #dbdbdb;
-}
-
-.img_skill img{
-  padding: 5px;
-  width: 90px;
-}
-
-.img_skill{
-  text-align: center;
 }
