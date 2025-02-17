@@ -10,6 +10,7 @@
   <li>CSS</li>
   <li>Javascript</li>
   <li>Bootstrap</li>
+  <li>PhPMail</li>
 </ul>
 <hr>
 <h3>O que aprendi</h3>
