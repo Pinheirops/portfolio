@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-default">
   <div class="container" id="start"> <!-- Container que envolve todo o conteudo da página -->
 
     <nav class="navMain navbar navbar-expand-lg p-4"> <!-- container dos conteudos do header -->
@@ -44,7 +44,7 @@
         <p data-anime="100" class="fadeInDown text-secondary ps-3">Seja bem vindo ao meu portfolio!</p>
         <h1 data-anime="200" class="fadeInDown">Sou um <span class="fadeInLeft text-primary">Front-end dev.</span></h1>
         <p data-anime="300" class="fadeInDown pt-3">Meu nome é Pedro Pinheiro Passos, sou um estudande de ciência da computação focado em desenvolvimento front-end.</p>
-        
+
         <div data-anime="300" class="buttons pt-3 fadeInDown">
           <a class="btn-cv btn btn-secondary rounded-5 py-2 px-4" href="pdf/cv_pt.pdf" download="cv_pt.pdf">Download CV</a>
           <a class="btn-pg btn btn-secondary rounded-5 py-2 px-4" href="#projeto">Iniciar jornada</a>
@@ -126,14 +126,6 @@
           <p>Insomnia</p>
         </div>
         <div class="col d-flex flex-column align-items-center">
-          <img src="img_skills/Grafana.svg" alt="javascript--v1" />
-          <p>Grafana K6</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center">
-          <img src="img_skills/Linux.svg" alt="bootstrap" />
-          <p>Linux OS</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center">
           <img src="img_skills/MySQL.svg" alt="bootstrap" />
           <p>MySQL</p>
         </div>
@@ -194,22 +186,22 @@
 
         <div class="form"> <!-- conteudos do formulario -->
           <form class="row flex-column gap-3 align-items-center p-5" action="enviaremail.php" method="POST">
-            <div>
+            <div class="contact-form">
               <label class="input-label" for="nome">Nome</label>
               <input class="form-control" type="text" name="nome" id="nome" placeholder="nome" required>
             </div>
-         
-            <div>
+
+            <div class="contact-form">
               <label class="input-label" for="sobrenome">Sobrenome</label>
               <input class="form-control" type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome" required>
             </div>
 
-            <div>
+            <div class="contact-form">
               <label class="input-label" for="email">E-mail</label>
               <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@email.com" required>
             </div>
 
-            <div>
+            <div class="contact-form">
               <label class="input-label" for="mensagem">Mensagem</label>
               <textarea class="form-control" name="mensagem" id="textarea" cols="40" rows="3"></textarea>
             </div>

@@ -32,6 +32,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
+  box-shadow: 0px 0px 10px #3d3d3d;
 }
 
 .mainIntroduction {
@@ -63,12 +64,10 @@ body {
   font-weight: 500;
 }
 
-.buttons .btn-cv {
-  background-color: #006eff;
-}
-
+.buttons .btn-cv,
 .buttons .btn-pg {
-  background-color: #006eff;
+  background-color: whitesmoke;
+  color: #3d3d3d;
 }
 
 .cartoes-projeto {
@@ -89,7 +88,7 @@ body {
   text-align: center;
 }
 
-.img_skill img{
+.img_skill img {
   padding: 5px;
   width: 100px;
 }
@@ -111,7 +110,7 @@ body {
 }
 
 .social .social-text {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   font-family: "Maven Pro", sans-serif;
   font-weight: 600;
   color: #3d3d3d;
@@ -123,7 +122,12 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-.form input, .input-label {
+.form .contact-form{
+  padding: 0px;
+}
+
+.form input,
+.input-label {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
@@ -175,6 +179,12 @@ body {
 
 .botao-form .btn:hover {
   background: #e6b208 !important;
+}
+
+.buttons .btn-cv:hover,
+.buttons .btn-pg:hover {
+  background-color: #006eff;
+  color: #292929;
 }
 
 /* RESPONSIVIDADE */
@@ -291,7 +301,12 @@ body {
 /* SCRIPT CLASSES */
 
 .darkMode {
-  background: rgb(31, 31, 31);
+  background: rgb(31, 31, 31) !important;
+  transition: 0.5s;
+}
+
+.bg-default {
+  background-color: #f5f5f5;
   transition: 0.5s;
 }
 
@@ -308,9 +323,11 @@ body {
 }
 
 .bg-darkMode {
-  background-color: #f0b802 !important;
+  color: #ececec !important;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
-.textButtons{
+
+.textButtons {
   color: #3d3d3d;
 }
 
@@ -326,6 +343,7 @@ body {
 }
 
 .bg-socialMedia {
-  border-radius: 20px;
+  border-radius: 50px;
+  padding: 5px;
   background: #dbdbdb;
 }
