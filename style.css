@@ -347,3 +347,20 @@ body {
   padding: 5px;
   background: #dbdbdb;
 }
+
+/* ANIMAÇÃO DIGITAÇÃO */
+
+#typing-text {
+  border-right: 3px solid #333; /* Cursor piscando */
+  padding-right: 3px;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #333; }
+  100% { border-color: transparent; }
+}
+
+.typing-container span {
+  animation: blink 0.7s step-end infinite; /* Cursor piscando */
+}
