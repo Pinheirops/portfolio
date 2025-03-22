@@ -18,13 +18,8 @@ body {
   position: relative;
 }
 
-.navMain .logo,
-.modo {
+.navMain .logo {
   font-size: 1.5rem;
-}
-
-.modo img {
-  max-width: 100%;
 }
 
 .navMain .lista-principal {
@@ -32,12 +27,12 @@ body {
 }
 
 .icon {
-  padding: 7px;
-  border: 1px solid #006eff;
+  padding: 5px;
   border-radius: 50px;
   cursor: pointer;
   position: absolute;
   right: 100px;
+  box-shadow: 0px 0px 10px #3d3d3d;
 }
 
 .mainIntroduction {
@@ -69,25 +64,33 @@ body {
   font-weight: 500;
 }
 
-.buttons .btn-cv {
-  background-color: #006eff;
-}
-
-.buttons .btn-pg:hover {
-  background-color: #006eff;
-  transition: 0.4s;
+.buttons .btn-cv,
+.buttons .btn-pg {
+  background-color: whitesmoke;
+  color: #3d3d3d;
 }
 
 .cartoes-projeto {
   font-family: "Maven Pro", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #3d3d3d;
+}
+
+.cartoes-projeto .card-body .btn {
+  font-weight: 500;
+  padding: 7px 20px;
 }
 
 .skills p {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
   color: #3d3d3d;
+  text-align: center;
+}
+
+.img_skill img {
+  padding: 5px;
+  width: 100px;
 }
 
 .project h2,
@@ -98,6 +101,8 @@ body {
   font-family: "Maven Pro", sans-serif;
   font-weight: 700;
   color: #3d3d3d;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .exp-detail {
@@ -109,6 +114,7 @@ body {
   font-family: "Maven Pro", sans-serif;
   font-weight: 600;
   color: #3d3d3d;
+  text-align: center;
 }
 
 .social .social-adress {
@@ -116,7 +122,12 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
-.form input {
+.form .contact-form{
+  padding: 0px;
+}
+
+.form input,
+.input-label {
   font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
@@ -126,7 +137,7 @@ body {
   resize: none;
 }
 
-.botao-form a {
+.botao-form button {
   font-family: "Maven Pro", sans-serif;
   font-weight: 600;
 }
@@ -168,6 +179,12 @@ body {
 
 .botao-form .btn:hover {
   background: #e6b208 !important;
+}
+
+.buttons .btn-cv:hover,
+.buttons .btn-pg:hover {
+  background-color: #006eff;
+  color: #292929;
 }
 
 /* RESPONSIVIDADE */
@@ -215,27 +232,6 @@ body {
 
   .mainImgDiv {
     max-width: 100%;
-  }
-
-  .navMain button {
-    border: 2px solid #006eff;
-    border-radius: 30px;
-    padding: 10px;
-  }
-
-  .navMain .lista-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 25px;
-  }
-
-  .lista-principal a {
-    font-size: 1rem;
-    border: 1px solid #006eff;
-    border-radius: 40px;
-    padding: 10px 10px !important;
   }
 
   .icon {
@@ -289,22 +285,8 @@ body {
     border-radius: 10px;
   }
 
-  .navMain .lista-principal {
-    flex-direction: column;
-    justify-content: end;
-    text-align: end;
-    gap: 20px;
-  }
-
   .navMain {
     padding-bottom: 0px !important;
-  }
-
-  .lista-principal a {
-    font-size: 1rem;
-    border: 1px solid #006eff;
-    border-radius: 40px;
-    padding: 10px 10px !important;
   }
 
   .mainIntroduction {
@@ -319,7 +301,12 @@ body {
 /* SCRIPT CLASSES */
 
 .darkMode {
-  background: rgb(31, 31, 31);
+  background: rgb(31, 31, 31) !important;
+  transition: 0.5s;
+}
+
+.bg-default {
+  background-color: #f5f5f5;
   transition: 0.5s;
 }
 
@@ -336,7 +323,12 @@ body {
 }
 
 .bg-darkMode {
-  background-color: #f0b802 !important;
+  color: #ececec !important;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.textButtons {
+  color: #3d3d3d;
 }
 
 .scrollzin-dark::-webkit-scrollbar {
@@ -347,10 +339,28 @@ body {
   background: #006eff;
   border-top: 4px solid rgb(31, 31, 31);
   border-bottom: 4px solid rgb(31, 31, 31);
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .bg-socialMedia {
-  border-radius: 20px;
+  border-radius: 50px;
+  padding: 5px;
   background: #dbdbdb;
+}
+
+/* ANIMAÇÃO DIGITAÇÃO */
+
+#typing-text {
+  border-right: 3px solid #333; /* Cursor piscando */
+  padding-right: 3px;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #333; }
+  100% { border-color: transparent; }
+}
+
+.typing-container span {
+  animation: blink 0.7s step-end infinite; /* Cursor piscando */
 }
