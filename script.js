@@ -13,7 +13,7 @@ const mainSpan = document.querySelector("h1 span");
 const btnMain = document.querySelector(".btn-cv");
 const btnPage = document.querySelector(".btn-pg");
 
-const frases = ["Front-end Dev", "Analista de Teste"];
+const frases = ["Front-end Dev", "Analista de Teste/QA"];
 let fraseIndex = 0;  // Índice da frase atual
 let typedText = "";  // Texto que será mostrado
 const typedElement = document.getElementById('typing-text');  // Elemento onde o texto aparecerá
