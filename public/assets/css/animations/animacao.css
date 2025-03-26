@@ -1,0 +1,40 @@
+/*ANIMAÇÃO DE EXIBIÇÃO ESMAECIDA DOS ITENS*/
+
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+/*ANIMAÇÃO DE TYPEWRITE NO TITULO DA PÁGINA*/
+
+#typing-text {
+  border-right: 3px solid var(--animation-blink-color); /* Cursor piscando */
+  padding-right: 3px;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: var(--animation-blink-color); }
+  100% { border-color: transparent; }
+}
+
+.typing-container span {
+  animation: blink 0.7s step-end infinite; /* Cursor piscando */
+}

@@ -10,10 +10,10 @@ body {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .navMain {
-  font-family: "Maven Pro", sans-serif;
   font-weight: 600;
   position: relative;
 }
@@ -32,12 +32,11 @@ body {
   cursor: pointer;
   position: absolute;
   right: 100px;
-  box-shadow: 0px 0px 10px #3d3d3d;
+  box-shadow: 0px 0px 10px var(--color-text-default);
 }
 
 .mainIntroduction {
-  font-family: "Maven Pro", sans-serif;
-  color: #3d3d3d;
+  color: var(--color-text-default);
 }
 
 .mainIntroduction h1 {
@@ -60,20 +59,18 @@ body {
 }
 
 .buttons a {
-  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
 
 .buttons .btn-cv,
 .buttons .btn-pg {
   background-color: whitesmoke;
-  color: #3d3d3d;
+  color: var(--color-text-default);
 }
 
 .cartoes-projeto {
-  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
-  color: #3d3d3d;
+  color: var(--color-text-default);
 }
 
 .cartoes-projeto .card-body .btn {
@@ -82,9 +79,8 @@ body {
 }
 
 .skills p {
-  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
-  color: #3d3d3d;
+  color: var(--color-text-default);
   text-align: center;
 }
 
@@ -98,52 +94,46 @@ body {
 .resumo h2,
 .contato h2 {
   font-size: 2.5rem;
-  font-family: "Maven Pro", sans-serif;
   font-weight: 700;
-  color: #3d3d3d;
+  color: var(--color-text-default);
   text-align: center;
   text-transform: uppercase;
 }
 
 .exp-detail {
-  background: linear-gradient(to right, #ececec 80%, #ffc400 50%);
+  background: linear-gradient(
+    to right,
+    var(--color-text-secondary) 80%,
+    #ffc400 50%
+  );
 }
 
 .social .social-text {
   font-size: 1.5rem;
-  font-family: "Maven Pro", sans-serif;
   font-weight: 600;
-  color: #3d3d3d;
+  color: var(--color-text-default);
   text-align: center;
 }
 
 .social .social-adress {
   font-size: 1.2rem;
-  font-family: "Maven Pro", sans-serif;
 }
 
-.form .contact-form{
+.form .contact-form {
   padding: 0px;
 }
 
 .form input,
 .input-label {
-  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
 }
 
 .form textarea {
-  font-family: "Maven Pro", sans-serif;
   resize: none;
 }
 
 .botao-form button {
-  font-family: "Maven Pro", sans-serif;
   font-weight: 600;
-}
-
-.exp-detail {
-  font-family: "Maven Pro", sans-serif;
 }
 
 .exp-detail h4 {
@@ -158,7 +148,7 @@ body {
 /* COLOR */
 
 .navMain a {
-  color: #006eff;
+  color: var(--color-text-default);
 }
 
 /* DETALHES */
@@ -171,7 +161,7 @@ body {
   content: "";
   width: 1000px;
   height: 1px;
-  background: rgb(216, 216, 216);
+  background: var(--design);
   position: absolute;
   top: 0;
   left: 10;
@@ -183,8 +173,8 @@ body {
 
 .buttons .btn-cv:hover,
 .buttons .btn-pg:hover {
-  background-color: #006eff;
-  color: #292929;
+  background-color: var(--design);
+  color: var(--color-text-default);
 }
 
 /* RESPONSIVIDADE */
@@ -192,7 +182,11 @@ body {
 /* Break 1400 */
 @media (max-width: 1400px) {
   .exp-detail {
-    background: linear-gradient(to right, #ececec 75%, #ffc400 50%);
+    background: linear-gradient(
+      to right,
+      var(--color-text-secondary) 75%,
+      #ffc400 50%
+    );
   }
 
   .contato .social {
@@ -219,7 +213,7 @@ body {
   .exp-detail {
     width: 400px;
     gap: 5px;
-    background: #ececec;
+    background: var(--color-text-secondary);
   }
 
   .exp-detail .empresa span {
@@ -279,9 +273,9 @@ body {
   }
 
   .scrollzin::-webkit-scrollbar-thumb {
-    background: #006eff;
-    border-top: 4px solid white;
-    border-bottom: 4px solid white;
+    background: var(--color-text-default);
+    border-top: 4px solid var(--color-text-secondary);
+    border-bottom: 4px solid var(--color-text-secondary);
     border-radius: 10px;
   }
 
@@ -301,34 +295,30 @@ body {
 /* SCRIPT CLASSES */
 
 .darkMode {
-  background: rgb(31, 31, 31) !important;
+  background: var(--bg-darkmode) !important;
   transition: 0.5s;
 }
 
 .bg-default {
-  background-color: #f5f5f5;
+  background-color: var(--bg-default);
   transition: 0.5s;
 }
 
 .textDarkMode {
-  color: #ececec !important;
+  color: var(--color-text-secondary) !important;
 }
 
 .show-off {
   display: none;
 }
 
-.borderDark {
-  border-color: #e6b208 !important;
-}
-
 .bg-darkMode {
-  color: #ececec !important;
+  color: var(--color-text-secondary) !important;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .textButtons {
-  color: #3d3d3d;
+  color: var(--color-text-default);
 }
 
 .scrollzin-dark::-webkit-scrollbar {
@@ -336,31 +326,14 @@ body {
 }
 
 .scrollzin-dark::-webkit-scrollbar-thumb {
-  background: #006eff;
-  border-top: 4px solid rgb(31, 31, 31);
-  border-bottom: 4px solid rgb(31, 31, 31);
+  background: var(--color-text-default);
+  border-top: 4px solid var(--bg-darkmode);
+  border-bottom: 4px solid var(--bg-darkmode);
   border-radius: 4px;
 }
 
 .bg-socialMedia {
   border-radius: 50px;
   padding: 5px;
-  background: #dbdbdb;
-}
-
-/* ANIMAÇÃO DIGITAÇÃO */
-
-#typing-text {
-  border-right: 3px solid #333; /* Cursor piscando */
-  padding-right: 3px;
-}
-
-@keyframes blink {
-  0% { border-color: transparent; }
-  50% { border-color: #333; }
-  100% { border-color: transparent; }
-}
-
-.typing-container span {
-  animation: blink 0.7s step-end infinite; /* Cursor piscando */
+  background: var(--design);
 }
