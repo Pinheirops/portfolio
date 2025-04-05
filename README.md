@@ -2,7 +2,7 @@
 <hr>
 <h3>Descrição</h3>
 <p>Desenvolvimento do meu portfolio para apresentar brevemente minha carreira, meus projetos, hobbies, minhas habilidades e informações de contato.</p>
-<p><strong>ACESSAR PROJETO:</strong> https://pinheirops.github.io/portfolio/</p>
+<p><strong>ACESSAR PROJETO:</strong> https://pinheirops.github.io/portfolio/public/</p>
 <hr>
 <h3>Ferramentas Utilizadas</h3>
 <ul>
